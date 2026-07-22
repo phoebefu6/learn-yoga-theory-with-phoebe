@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>learn yoga theory with phoebe - the theory of a 200-hour teacher training</title>
+<link rel="stylesheet" href="assets/style.css?v=1">
+<style>
+  .stats-row { display: flex; gap: 2.4rem; margin-top: 1.5rem; flex-wrap: wrap; }
+  .stat b { display: block; font-size: 2.1rem; font-weight: 800; line-height: 1.05; font-variant-numeric: tabular-nums; }
+  .stat span { font-size: .72rem; opacity: .85; text-transform: uppercase; letter-spacing: .09em; font-weight: 600; }
+
+  .course-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr)); gap: 1rem; margin-top: 1.5rem; }
+  .course-card {
+    border: 1px solid var(--hairline);
+    border-top: 4px solid var(--diff, var(--indigo));
+    border-radius: var(--radius);
+    padding: 1.2rem 1.3rem 1.1rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    text-decoration: none;
+    color: var(--ink);
+    background: #fff;
+    transition: box-shadow .15s ease, border-color .15s ease, transform .15s ease;
+    position: relative;
+  }
+  .course-card:hover { border-color: var(--indigo-soft); border-top-color: var(--diff, var(--indigo)); box-shadow: 0 8px 28px rgba(76,115,85,.16); transform: translateY(-3px); }
+  .course-card .cicon { font-size: 1.7rem; line-height: 1; }
+  .course-card .cnum { font-size: .72rem; font-weight: 700; color: var(--indigo); text-transform: uppercase; letter-spacing: .1em; }
+  .course-card h3 { font-size: 1.05rem; font-weight: 800; line-height: 1.3; }
+  .course-card p { font-size: .85rem; color: var(--muted); flex: 1; }
+  .course-card .meta { display: flex; gap: .4rem; flex-wrap: wrap; }
+
+  .diff-legend { display: flex; gap: 1rem; margin-top: 1.6rem; font-size: .74rem; color: var(--muted); font-weight: 600; flex-wrap: wrap; }
+  .diff-legend i { display: inline-block; width: .85rem; height: .35rem; border-radius: 999px; margin-right: .35rem; vertical-align: middle; }
+
+  .paths { margin-top: 2.6rem; }
+  .paths h2 { font-size: 1.3rem; font-weight: 800; margin-bottom: .3rem; }
+  .paths .plede { color: var(--muted); font-size: .92rem; margin-bottom: .8rem; }
+  .path { display: flex; gap: .55rem; align-items: center; padding: .75rem 0; border-bottom: .5px solid var(--hairline); flex-wrap: wrap; }
+  .path:last-child { border-bottom: none; }
+  .path b { min-width: 15.5rem; font-size: .9rem; }
+  .path .pstep { background: var(--indigo-50); color: var(--indigo); border-radius: 999px; padding: .16rem .68rem; font-weight: 700; font-size: .8rem; text-decoration: none; transition: all .12s ease; }
+  .path .pstep:hover { background: var(--indigo); color: #fff; }
+  .path .parr { color: var(--faint); font-weight: 700; }
+
+  .mm-section { margin-top: 1.6rem; }
+  .mm-section h2 { font-size: 1.3rem; font-weight: 800; margin-bottom: .2rem; }
+  .mm-section .mm-lede { color: var(--muted); font-size: .92rem; margin-bottom: .4rem; }
+  .mm-wrap { border: 1px solid var(--hairline); border-radius: var(--radius); background: linear-gradient(180deg,#fff, #F3F7F3); padding: .6rem; overflow-x: auto; }
+  .mm-svg { width: 100%; height: auto; display: block; max-width: 60rem; margin: 0 auto; min-width: 34rem; }
+  .mm-link { cursor: pointer; text-decoration: none; }
+  .mm-node rect { transition: opacity .15s ease, filter .15s ease; }
+  .mm-node text { pointer-events: none; }
+  .mm-link:hover .mm-node rect { filter: brightness(1.06); }
+  .mm-edge { transition: opacity .15s ease; }
+
+  .note-band { margin-top: 1.4rem; background: var(--amber-50); border: 1px solid var(--hairline); border-left: 4px solid var(--amber); border-radius: 12px; padding: .9rem 1.1rem; font-size: .88rem; color: var(--ink); }
+  .note-band b { color: var(--amber-ink); }
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="eyebrow">Learn Yoga Theory with Phoebe</div>
+    <h1>The theory of a 200-hour yoga training, in nine sessions</h1>
+    <p class="sub">Everything a 200-hour teacher training expects you to KNOW - philosophy, the eight limbs, the subtle and physical body, asana logic, sequencing, and the craft of teaching - mapped to the Yoga Alliance standard, easy to hard, with diagrams that make the Sanskrit stick.</p>
+    <div class="stats-row">
+      <div class="stat"><b data-count="9">9</b><span>sessions</span></div>
+      <div class="stat"><b data-count="4">4</b><span>knowledge areas</span></div>
+      <div class="stat"><b data-count="200">200</b><span>hours mapped</span></div>
+      <div class="stat"><b data-count="45">45</b><span>min per session</span></div>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section class="section">
+    <div class="course-grid">
+      <a class="course-card" href="courses/01-roots-lineage.html" style="--diff:#34D399">
+        <span class="cicon">🌱</span>
+        <span class="cnum">Session 1 · easiest</span>
+        <h3>Roots &amp; lineage: what yoga actually is</h3>
+        <p>Yoga means union, not stretching. The timeline from the Vedas to your studio, the lineage behind the styles, and the map of the whole course.</p>
+        <span class="meta"><span class="pill amber">▶ Start here</span><span class="pill light">History</span></span>
+      </a>
+      <a class="course-card" href="courses/02-eight-limbs.html" style="--diff:#FBBF24">
+        <span class="cicon">🪜</span>
+        <span class="cnum">Session 2 · building</span>
+        <h3>The eight limbs: Patanjali's map</h3>
+        <p>The Yoga Sutras, the eight-limbed path (ashtanga), the five yamas and niyamas, and the sutras every teacher can quote.</p>
+        <span class="meta"><span class="pill light">Philosophy</span></span>
+      </a>
+      <a class="course-card" href="courses/03-gita-paths.html" style="--diff:#FBBF24">
+        <span class="cicon">🕉️</span>
+        <span class="cnum">Session 3 · building</span>
+        <h3>The Gita &amp; the paths of yoga</h3>
+        <p>Karma, bhakti and jnana yoga, dharma, acting without attachment, and the ethics a teacher carries - including equity in yoga.</p>
+        <span class="meta"><span class="pill light">Philosophy + ethics</span></span>
+      </a>
+      <a class="course-card" href="courses/04-subtle-body.html" style="--diff:#FB923C">
+        <span class="cicon">🔥</span>
+        <span class="cnum">Session 4 · deepening</span>
+        <h3>The subtle body: koshas, chakras &amp; prana</h3>
+        <p>The energy anatomy of yoga: five koshas, three gunas, seven chakras, the nadis, the five vayus, the bandhas, and Ayurveda's doshas.</p>
+        <span class="meta"><span class="pill light">Subtle anatomy</span></span>
+      </a>
+      <a class="course-card" href="courses/05-functional-anatomy.html" style="--diff:#FB923C">
+        <span class="cicon">🦴</span>
+        <span class="cnum">Session 5 · deepening</span>
+        <h3>Functional anatomy for yoga</h3>
+        <p>Bones, planes and the spine; the muscles that matter; why the breath calms the nervous system; and how to keep students safe.</p>
+        <span class="meta"><span class="pill light">Anatomy &amp; physiology</span></span>
+      </a>
+      <a class="course-card" href="courses/06-asana-theory.html" style="--diff:#FB923C">
+        <span class="cicon">🧘</span>
+        <span class="cnum">Session 6 · deepening</span>
+        <h3>Asana theory: the logic of posture</h3>
+        <p>Steady and comfortable (sthira sukham asanam), the families of posture, alignment principles, reading Sanskrit pose names, props and counterposes.</p>
+        <span class="meta"><span class="pill light">Techniques</span></span>
+      </a>
+      <a class="course-card" href="courses/07-course-flow.html" style="--diff:#F87171">
+        <span class="cicon">🌊</span>
+        <span class="cnum">Session 7 · advanced</span>
+        <h3>Course flow theory: sequencing a class</h3>
+        <p>The arc of a class, vinyasa krama and the peak-pose method, sun salutations A and B, class types, and the energetic rise-and-settle.</p>
+        <span class="meta"><span class="pill light">Sequencing</span></span>
+      </a>
+      <a class="course-card" href="courses/08-cueing-analogy.html" style="--diff:#F87171">
+        <span class="cicon">🗣️</span>
+        <span class="cnum">Session 8 · advanced</span>
+        <h3>Cueing &amp; analogy theory: teaching craft</h3>
+        <p>The four cueing channels, why imagery beats anatomy, invitational language, and hands-on assists done with real consent.</p>
+        <span class="meta"><span class="pill light">Teaching methodology</span></span>
+      </a>
+      <a class="course-card" href="courses/09-pranayama-meditation.html" style="--diff:#F87171">
+        <span class="cicon">🌬️</span>
+        <span class="cnum">Session 9 · advanced</span>
+        <h3>Pranayama, meditation &amp; becoming a teacher</h3>
+        <p>Breath techniques, the inner limbs of meditation, scope and ethics, and your concrete path from theory to a registered 200-hour teacher.</p>
+        <span class="meta"><span class="pill light">Professional essentials</span></span>
+      </a>
+    </div>
+    <div class="diff-legend">
+      <span><i style="background:#34D399"></i>easiest - start here</span>
+      <span><i style="background:#FBBF24"></i>building - philosophy</span>
+      <span><i style="background:#FB923C"></i>deepening - the body</span>
+      <span><i style="background:#F87171"></i>advanced - teaching craft</span>
+    </div>
+
+    <div class="note-band">
+      <b>Theory, not certification.</b> This course teaches the knowledge half of a 200-hour training so you walk into your program already fluent. The practicum - supervised teaching hours, live physical adjustments, your own on-the-mat practice, and the certificate itself - can only happen in an accredited in-person Registered Yoga School (RYS).
+    </div>
+
+    <div class="paths">
+      <h2>Choose your focus 🧭</h2>
+      <p class="plede">Everyone starts at Session 1 for the map. After that, follow the thread you are most curious about - or take all nine in order.</p>
+      <div class="path"><b>🧘 Philosophy first</b>
+        <a class="pstep" href="courses/01-roots-lineage.html">1</a><span class="parr">→</span>
+        <a class="pstep" href="courses/02-eight-limbs.html">2</a><span class="parr">→</span>
+        <a class="pstep" href="courses/03-gita-paths.html">3</a>
+      </div>
+      <div class="path"><b>🫀 Body &amp; breath</b>
+        <a class="pstep" href="courses/04-subtle-body.html">4</a><span class="parr">→</span>
+        <a class="pstep" href="courses/05-functional-anatomy.html">5</a><span class="parr">→</span>
+        <a class="pstep" href="courses/09-pranayama-meditation.html">9</a>
+      </div>
+      <div class="path"><b>🎓 Teaching craft</b>
+        <a class="pstep" href="courses/06-asana-theory.html">6</a><span class="parr">→</span>
+        <a class="pstep" href="courses/07-course-flow.html">7</a><span class="parr">→</span>
+        <a class="pstep" href="courses/08-cueing-analogy.html">8</a>
+      </div>
+      <div class="path"><b>📿 The full journey</b>
+        <a class="pstep" href="courses/01-roots-lineage.html">1</a><span class="parr">→</span>
+        <a class="pstep" href="courses/02-eight-limbs.html">2</a><span class="parr">→</span>
+        <a class="pstep" href="courses/03-gita-paths.html">3</a><span class="parr">→</span>
+        <a class="pstep" href="courses/04-subtle-body.html">4</a><span class="parr">→</span>
+        <a class="pstep" href="courses/05-functional-anatomy.html">5</a><span class="parr">→</span>
+        <a class="pstep" href="courses/06-asana-theory.html">6</a><span class="parr">→</span>
+        <a class="pstep" href="courses/07-course-flow.html">7</a><span class="parr">→</span>
+        <a class="pstep" href="courses/08-cueing-analogy.html">8</a><span class="parr">→</span>
+        <a class="pstep" href="courses/09-pranayama-meditation.html">9</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section mm-section">
+    <h2>The knowledge map 🧠</h2>
+    <p class="mm-lede">The whole course at a glance - hover a session to spotlight its concepts, click any node to jump in.</p>
+    <div class="mm-wrap"><div id="mindmap"></div></div>
+  </section>
+
+  <footer class="pagefoot">
+    <span>learn-yoga-theory-with-phoebe · by Phoebe Fu &nbsp;·&nbsp; 📚 <a href="https://phoebefu6.github.io/learn-with-phoebe/">Learn with Phoebe ↗</a> · mapped to the Yoga Alliance RYS-200 standard</span>
+  </footer>
+</main>
+
+<script>
+window.MINDMAP_DATA = {
+  title: "Yoga\nTheory",
+  centerColor: "#2E4636",
+  sessions: [
+    { label: "Roots &\nlineage", href: "courses/01-roots-lineage.html", color: "#34D399",
+      concepts: [
+        { label: "What yoga is", href: "courses/01-roots-lineage.html" },
+        { label: "The timeline", href: "courses/01-roots-lineage.html" },
+        { label: "The lineage", href: "courses/01-roots-lineage.html" } ] },
+    { label: "The eight\nlimbs", href: "courses/02-eight-limbs.html", color: "#FBBF24",
+      concepts: [
+        { label: "The Yoga Sutras", href: "courses/02-eight-limbs.html" },
+        { label: "Ashtanga", href: "courses/02-eight-limbs.html" },
+        { label: "Yamas & niyamas", href: "courses/02-eight-limbs.html" } ] },
+    { label: "Gita &\nthe paths", href: "courses/03-gita-paths.html", color: "#FBBF24",
+      concepts: [
+        { label: "Karma, bhakti, jnana", href: "courses/03-gita-paths.html" },
+        { label: "Non-attachment", href: "courses/03-gita-paths.html" },
+        { label: "Yoga ethics", href: "courses/03-gita-paths.html" } ] },
+    { label: "The subtle\nbody", href: "courses/04-subtle-body.html", color: "#FB923C",
+      concepts: [
+        { label: "Koshas & gunas", href: "courses/04-subtle-body.html" },
+        { label: "Seven chakras", href: "courses/04-subtle-body.html" },
+        { label: "Prana & bandhas", href: "courses/04-subtle-body.html" } ] },
+    { label: "Functional\nanatomy", href: "courses/05-functional-anatomy.html", color: "#FB923C",
+      concepts: [
+        { label: "Spine & planes", href: "courses/05-functional-anatomy.html" },
+        { label: "The nervous system", href: "courses/05-functional-anatomy.html" },
+        { label: "Safe practice", href: "courses/05-functional-anatomy.html" } ] },
+    { label: "Asana\ntheory", href: "courses/06-asana-theory.html", color: "#FB923C",
+      concepts: [
+        { label: "Sthira sukham", href: "courses/06-asana-theory.html" },
+        { label: "Posture families", href: "courses/06-asana-theory.html" },
+        { label: "Reading names", href: "courses/06-asana-theory.html" } ] },
+    { label: "Course flow\ntheory", href: "courses/07-course-flow.html", color: "#F87171",
+      concepts: [
+        { label: "The class arc", href: "courses/07-course-flow.html" },
+        { label: "Peak-pose method", href: "courses/07-course-flow.html" },
+        { label: "Sun salutations", href: "courses/07-course-flow.html" } ] },
+    { label: "Cueing &\nanalogy", href: "courses/08-cueing-analogy.html", color: "#F87171",
+      concepts: [
+        { label: "Cueing channels", href: "courses/08-cueing-analogy.html" },
+        { label: "Analogy theory", href: "courses/08-cueing-analogy.html" },
+        { label: "Assists & consent", href: "courses/08-cueing-analogy.html" } ] },
+    { label: "Breath &\nteaching", href: "courses/09-pranayama-meditation.html", color: "#F87171",
+      concepts: [
+        { label: "Pranayama", href: "courses/09-pranayama-meditation.html" },
+        { label: "Meditation limbs", href: "courses/09-pranayama-meditation.html" },
+        { label: "Path to RYT-200", href: "courses/09-pranayama-meditation.html" } ] }
+  ]
+};
+</script>
+<script src="assets/mindmap.js?v=1"></script>
+<script src="assets/app.js?v=1"></script>
+</body>
+</html>
