@@ -2,6 +2,7 @@
    Accent: indigo #4C7355 · Ink: #292E28 · Flagship: amber #C4643C */
 
 :root {
+  --muted-text: #6C776C;
   --indigo: #4C7355;
   --indigo-deep: #2E4636;
   --indigo-mid: #6E9B77;
@@ -170,7 +171,7 @@ main { padding: 2.5rem 0 4rem; }
   flex: none;
 }
 .mode.live { background: var(--indigo); color: #fff; }
-.mode.self { background: #fff; color: var(--muted); border: 1px solid var(--hairline); }
+.mode.self { background: #fff; color: var(--muted-text); border: 1px solid var(--hairline); }
 
 /* ---------- accordions ---------- */
 details.card {
